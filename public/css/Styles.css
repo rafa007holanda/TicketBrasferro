@@ -1,0 +1,116 @@
+.div_PopUp{
+    width:200px;
+    height:100px;
+    background:#f00;
+    position:absolute;
+    z-index:100;
+    top:30%;
+    left:40;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #6c6c6c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: inline-block;
+    position: relative;
+    margin: 1.2em 0 1em 0;
+    padding: 1em;
+    border: none;
+    text-decoration: none; 
+    /* width: 300px;
+    height: 300px; */
+    background:rgba(20, 55, 145, 0.7);
+}
+body{
+    margin: 0px;
+}
+.centro {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    background-color: rgba(10,23,55,0.7);
+    color: white;
+
+    /* pura mágica */
+    position: absolute;
+    top: 50%; /* posiciona na metade da tela */
+    margin-top: -25px; /* e retrocede metade da altura */
+    left: 50%; /* posiciona na metade da tela */
+    margin-left: -100px; /* e retrocede metade da largura */
+}
+.centro2 {
+    line-height: 50px;
+    text-align:center;
+    color: white;
+
+    /* pura mágica */
+    position: absolute;
+    top: 50%; /* posiciona na metade da tela */
+    margin-top: -25px; /* e retrocede metade da altura */
+    left: 50%; /* posiciona na metade da tela */
+    margin-left: -100px; /* e retrocede metade da largura */
+}
+.fonte{
+    font:  16px;
+    font-weight: 700;
+}
+
+/*configuração dos botões*/
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.btn2 {
+    background-color: white;
+    border: 2px solid #2098D1;
+    display: inline-block;
+    position: relative;
+    margin: 1.2em 0 1em 0;
+    padding: 1em; 
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+}
+.btn {
+    display: inline-block;
+    position: relative;
+    margin: 1.2em 0 1em 0;
+    padding: 1em; 
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+    color: #39424D;
+    cursor: pointer;
+}
+.hvr-fade {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: #2098D1;
+    color: white;
+}
+.btn-size {
+    padding: 2em;
+    padding-top: 3.5%;
+    font-size: 12pt;
+}
