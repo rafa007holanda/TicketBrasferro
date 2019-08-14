@@ -27,4 +27,4 @@ Route::get('/', 'PagesController@index');
 Route::get('/telalogin', 'PagesController@telaLogin');
 Route::get('/telaadm', 'PagesController@telaAdm'); 
 Route::get('/teste', 'PagesController@Teste'); 
-Route::post('tratar', 'consultaController@tratar')->name('tratar');
+Route::post('/telaPrintTicket', 'ConsultaController@index');
